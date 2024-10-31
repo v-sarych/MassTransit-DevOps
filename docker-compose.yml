@@ -1,0 +1,43 @@
+#docker-compose up --build -d
+#docker-compose down  
+version: "3"
+
+services:
+
+  consumer:
+    build: 
+      context: "./"
+      dockerfile: ./Consumer/Dockerfile
+    ports:
+      - 5001:8080
+    networks:
+      - internal-network
+    depends_on:
+      - rabbit
+
+
+  sender:
+    build:
+      context: "./"
+      dockerfile: ./Sender/Dockerfile
+    ports:
+      - 5002:8080
+    networks:
+      - internal-network
+    depends_on:
+      - rabbit
+
+
+  rabbit:
+    image: rabbitmq:3-management
+    hostname: rabbit
+    ports:
+      - 15672:15672
+      - 5672:5672
+    networks:
+      - internal-network
+    
+
+networks:
+  internal-network:
+    driver: bridge
