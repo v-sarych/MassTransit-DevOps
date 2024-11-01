@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sender", "Sender\Sender.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Consumer", "Consumer\Consumer.csproj", "{BED0FB22-7B0F-45D1-99AB-E2B9441E84EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{B9409C6D-BA63-4A59-85AA-0B5694001E8D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core", "Core\Core.csproj", "{B9409C6D-BA63-4A59-85AA-0B5694001E8D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefitTest", "RefitTest\RefitTest.csproj", "{A236A849-86AE-4325-911E-4D5C54C33C83}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{B9409C6D-BA63-4A59-85AA-0B5694001E8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B9409C6D-BA63-4A59-85AA-0B5694001E8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B9409C6D-BA63-4A59-85AA-0B5694001E8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A236A849-86AE-4325-911E-4D5C54C33C83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A236A849-86AE-4325-911E-4D5C54C33C83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A236A849-86AE-4325-911E-4D5C54C33C83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A236A849-86AE-4325-911E-4D5C54C33C83}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

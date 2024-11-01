@@ -1,0 +1,6 @@
+@RefitTest_HostAddress = http://localhost:5117
+
+GET {{RefitTest_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
