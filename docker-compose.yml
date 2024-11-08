@@ -27,6 +27,17 @@ services:
     depends_on:
       - rabbit
 
+  refit:
+    build:
+      context: "./"
+      dockerfile: ./RefitTest/Dockerfile
+    ports:
+      - 5003:8080
+    networks:
+      - internal-network
+    depends_on:
+      - consumer
+
 
   rabbit:
     image: rabbitmq:3-management
