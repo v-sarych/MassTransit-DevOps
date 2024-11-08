@@ -1,5 +1,5 @@
-#docker-compose up --build -d
-#docker-compose down  
+#docker-compose up --build -d [service name(optional)]
+#docker-compose down [service name(optional)]  
 version: "3"
 
 services:
